@@ -12,7 +12,7 @@ There are pros and cons to this approach, however it was deemed appropriate for 
 ## Demonstration Video
 This application was developed by targeting a Windows 10 machine utilizing CLR and the .NET Core (3.1). The following is a set of sample videos showcasing how you may run this project and the intended use / functionality of the application.
 
-**User Authentication and Messaging Functionality**: https://vimeo.com/725575629
-**Conversation Updates**: https://vimeo.com/725581436
-**Registration System**: https://vimeo.com/725584303
+**User Authentication and Messaging Functionality**: https://vimeo.com/725575629  
+**Conversation Updates**: https://vimeo.com/725581436  
+**Registration System**: https://vimeo.com/725584303  
 
