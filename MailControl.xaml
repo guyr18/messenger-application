@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="messenger_app.MailControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:messenger_app"
+             mc:Ignorable="d" Height="26" Width="698" Background="White">
+    <Button x:Name="buttonUI" HorizontalContentAlignment="Left" Padding="12,0,0,0" Content="Label" BorderBrush="White" Background="White" Click="handleMailClick">
+    </Button>
+
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="messenger_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:messenger_app"
+        mc:Ignorable="d"
+        Title="MainWindow" ResizeMode="NoResize" Height="450" Width="800">
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="#FF2C82EA" Margin="180,117,180,170" CornerRadius="8,8,8,8"/>
+        <Label Content="Messenger App" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Margin="0,60,0,0"/>
+        <TextBox x:Name="textEmail" Foreground="#232323" HorizontalAlignment="Left" Padding="12,0,0,0" Text="example@yourdomain.com" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="200" Height="29" TextAlignment="Left" Margin="310,143,0,0" GotFocus="handleGotFocusEmail" LostFocus="handleLostFocusEmail"/>
+        <PasswordBox x:Name="textPassword" Foreground="#232323" HorizontalAlignment="Left" Padding="12,0,0,0" Password="&lt;enter your password&gt;" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="200" Height="29" Margin="310,0,0,0" GotFocus="handleGotFocusPwd" LostFocus="handleLostFocusPwd"/>
+        <Label Content="Email Address" HorizontalAlignment="Left" Margin="201,143,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Password" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Margin="227,191,0,0" />
+        <Button Content="Login" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Height="32" Width="144" Background="#FF0A7AFF" FontWeight="Bold" FontSize="16" Foreground="White" BorderBrush="White" Click="handleLoginClick"/>
+        <Label Content="Need an account?" HorizontalAlignment="Left" Margin="310,327,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="linkRegister" Content="Click here." HorizontalAlignment="Left" Margin="415,327,0,0" VerticalAlignment="Top" Foreground="#FF3DA4DE" MouseLeftButtonUp="handleRegisterClick"/>
+        <Label x:Name="textError" Content="Invalid email/password combination" HorizontalAlignment="Left" Margin="290,246,0,0" VerticalAlignment="Top" Background="White" Foreground="#FFFF0101" FontWeight="Bold" RenderTransformOrigin="0.526,-0.234"/>
+
+    </Grid>
+</Window>

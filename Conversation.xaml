@@ -1,0 +1,29 @@
+﻿<Window x:Class="messenger_app.Conversation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:messenger_app"
+        mc:Ignorable="d"
+        Title="Conversation" ResizeMode="NoResize" Height="450" Width="800" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="335*"/>
+            <RowDefinition Height="99*"/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="1" BorderBrush="#FFC5C5C5" Margin="263,0,0,0" Grid.RowSpan="2" >
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel x:Name="chatStackPanel" Margin="0,73,0,61" Background="#FFCCCCCC">
+                    <Label x:Name="textInfo" Content="Label" HorizontalAlignment="Center" FontWeight="Bold"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <Label x:Name="textRecipient" Content="recipient" Margin="284,7,315,271" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="textWelcome" Content="Welcome, &lt;x&gt;" HorizontalAlignment="Left" Margin="31,44,0,0" VerticalAlignment="Top" Width="193" FontWeight="Bold" FontSize="22" Foreground="Black"/>
+        <Button x:Name="buttonMessages" Content="Messages" Margin="-4,100,542,178" FontFamily="Segoe UI" BorderBrush="#FFBDBBBB" Background="White" Foreground="#FF09A7E2" FontSize="18" FontWeight="Normal"/>
+        <TextBox x:Name="textMessage" Padding="12,0,0,0" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="284,50,0,0" Text="Type a message.." TextWrapping="Wrap" VerticalAlignment="Top" Width="327" Foreground="#FF919191" Height="29" Grid.Row="1" GotFocus="handleTypeFocus" LostFocus="handleTypeFocusLost"/>
+        <Button x:Name="buttonSend" Content="Send" Margin="645,45,21,15" FontFamily="Segoe UI" BorderBrush="#FFBDBBBB" Background="White" FontSize="18" Foreground="Black" Grid.Row="1" RenderTransformOrigin="0.448,1" Click="handleSendClick"/>
+
+    </Grid>
+</Window>
